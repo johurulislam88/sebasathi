@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0f766e">
+<title>সেবাসাথী — হাসপাতাল ও চিকিৎসা সহায়ক</title>
+<style>
+:root{--green:#0f766e;--dark:#134e4a;--mint:#ccfbf1;--bg:#f4f8f7;--card:#fff;--ink:#172b2a;--muted:#5b706e;--line:#dce8e5;--orange:#9a3412;--red:#991b1b}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Noto Sans Bengali",sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}button,input,select,textarea{font:inherit}button{cursor:pointer;border:0;border-radius:12px;padding:11px 15px;background:var(--green);color:#fff;font-weight:750}button.secondary{background:#e7f3f0;color:var(--dark);border:1px solid var(--line)}button.danger{background:#fff1f2;color:var(--red);border:1px solid #fecdd3}.wrap{max-width:1080px;margin:auto;padding:0 16px}.hero{background:linear-gradient(120deg,#115e59,#0f766e);color:#fff;padding:22px 0}.brand{display:flex;align-items:center;gap:12px;font-weight:900;font-size:1.5rem}.logo{width:46px;height:46px;border-radius:14px;background:white;color:var(--green);display:grid;place-items:center;font-size:1.7rem}.hero p{margin:8px 0 0;color:#d7fffa}.nav{display:flex;gap:8px;overflow:auto;padding:12px 0}.nav button{white-space:nowrap}.nav .active{background:var(--dark)}.warning{margin:12px 0;background:#fff7df;border:1px solid #f5d98b;border-radius:12px;padding:12px;color:#704b00;font-size:.93rem}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;margin:14px 0 24px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 4px 18px #143a3210}.s8{grid-column:span 8}.s6{grid-column:span 6}.s4{grid-column:span 4}.s12{grid-column:span 12}h2{font-size:1.2rem;line-height:1.3;margin:0 0 12px}h3{font-size:1.03rem;margin:0 0 6px}.muted{color:var(--muted);font-size:.92rem}.field{display:flex;flex-direction:column;gap:5px;margin-bottom:11px}.field label{font-weight:700;font-size:.92rem}.field input,.field select,.field textarea{width:100%;border:1px solid #cbdad6;background:white;border-radius:10px;padding:11px;color:var(--ink)}.field textarea{min-height:76px;resize:vertical}.fields{display:grid;grid-template-columns:1fr 1fr;gap:10px}.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.pill{display:inline-block;background:var(--mint);color:var(--dark);padding:3px 8px;border-radius:999px;font-size:.8rem;font-weight:750}.pill.orange{background:#ffedd5;color:var(--orange)}.pill.red{background:#fee2e2;color:var(--red)}.item{border-top:1px solid var(--line);padding:13px 0}.item:first-of-type{border-top:0}.item p{margin:5px 0}.empty{background:#f8fbfa;padding:18px;text-align:center;border-radius:12px;color:var(--muted)}.tagline{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}.stat{font-size:1.6rem;font-weight:900;color:var(--green)}.hidden{display:none!important}.toast{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);background:#123f3a;color:white;padding:12px 16px;border-radius:12px;max-width:90%;z-index:9;box-shadow:0 6px 25px #0002}.foot{padding:10px 0 30px;color:var(--muted);font-size:.9rem}.safety{border-left:4px solid #d97706;padding:10px 12px;background:#fffaf0;color:#713f12;border-radius:8px}.check{display:flex;gap:8px;align-items:flex-start;margin:10px 0}.check input{margin-top:6px}@media(max-width:720px){.s8,.s6,.s4{grid-column:span 12}.fields{grid-template-columns:1fr}.card{padding:15px}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap"><div class="brand"><div class="logo">✚</div><div>সেবাসাথী <div style="font-size:.76rem;font-weight:500;color:#d7fffa">হাসপাতাল ও চিকিৎসা তথ্য সহায়ক</div></div></div><p>হাসপাতাল খুঁজুন, চিকিৎসকের অ্যাপয়েন্টমেন্টের অনুরোধ লিখুন, পরীক্ষার খরচ তুলনা করুন।</p></div></header>
+<main class="wrap">
+<nav class="nav">
+<button class="active" data-tab="hospitals">🏥 হাসপাতাল</button>
+<button class="secondary" data-tab="doctors">👩‍⚕️ চিকিৎসক</button>
+<button class="secondary" data-tab="tests">🧪 পরীক্ষার খরচ</button>
+<button class="secondary" data-tab="appointments">📅 অ্যাপয়েন্টমেন্ট</button>
+<button class="secondary" data-tab="about">💡 আয় ও অনলাইন চালু</button>
+</nav>
+<div class="warning">⚠️ <b>ডেমো ও তথ্য-যাচাই নোট:</b> এখানে দেখানো হাসপাতাল, চিকিৎসক, সময় ও পরীক্ষার মূল্য নমুনা—বাস্তব প্রতিষ্ঠান বা প্রকৃত মূল্য হিসেবে ধরে নেবেন না। বুকিং এখন শুধু এই ডিভাইসে সংরক্ষিত হয়; হাসপাতাল/ডাক্তারের কাছে পাঠানো হয় না। জরুরি অবস্থায় এই অ্যাপের বদলে নিকটস্থ জরুরি বিভাগ বা স্থানীয় জরুরি সেবা নিন।</div>
+
+<section id="tab-hospitals"><div class="grid">
+<div class="card s8"><h2>🔎 হাসপাতাল ও ক্লিনিক খুঁজুন</h2><div class="fields"><div class="field"><label for="area">এলাকা / জেলা</label><input id="area" placeholder="যেমন: রংপুর, ঢাকা"></div><div class="field"><label for="service">সেবার ধরন</label><select id="service"><option value="">সব সেবা</option><option>সরকারি হাসপাতাল</option><option>বেসরকারি হাসপাতাল</option><option>ডায়াগনস্টিক সেন্টার</option><option>মাতৃ ও শিশু</option></select></div></div><button id="searchHosp">খুঁজুন</button><div id="hospitalResults" style="margin-top:12px"></div></div>
+<div class="card s4"><h2>📌 যাওয়ার আগে</h2><ul class="muted"><li>হাসপাতালে ফোন করে বিভাগ ও চিকিৎসকের সময় নিশ্চিত করুন।</li><li>পরীক্ষার মূল্য ও রিপোর্ট পাওয়ার সময় আগে জেনে নিন।</li><li>জরুরি রোগীর ক্ষেত্রে অ্যাপয়েন্টমেন্টের জন্য অপেক্ষা করবেন না।</li><li>ব্যক্তিগত মেডিকেল রিপোর্ট এখানে আপলোড করবেন না।</li></ul></div>
+<div class="card s12"><h2>নমুনা হাসপাতাল তালিকা</h2><p class="muted">প্রকাশের আগে প্রকৃত নাম, ঠিকানা, ফোন ও সেবা নির্ভরযোগ্য উৎস থেকে যাচাই করে বসাতে হবে।</p><div id="hospitalAll"></div></div>
+</div></section>
+
+<section id="tab-doctors" class="hidden"><div class="grid">
+<div class="card s6"><h2>👩‍⚕️ চিকিৎসক খুঁজুন</h2><div class="field"><label for="spec">বিভাগ</label><select id="spec"><option value="">সব বিভাগ</option><option>মেডিসিন</option><option>শিশু</option><option>স্ত্রীরোগ ও প্রসূতি</option><option>চর্মরোগ</option><option>হৃদরোগ</option><option>চক্ষু</option></select></div><div class="field"><label for="docArea">এলাকা</label><input id="docArea" placeholder="যেমন: রংপুর"></div><button id="searchDocs">চিকিৎসক দেখুন</button><div id="doctorResults" style="margin-top:12px"></div></div>
+<div class="card s6"><h2>✔️ চিকিৎসক যাচাই</h2><p class="muted">বাস্তব অ্যাপে চিকিৎসকের নাম, যোগ্যতা, BMDC নিবন্ধন, কর্মস্থল এবং চেম্বারের সময় যাচাই করে দেখানো উচিত। এই ডেমোর চিকিৎসক-তথ্য নমুনা, চিকিৎসা-পরামর্শ নয়।</p><div class="safety">লক্ষণ দেখে নিজে নিজে রোগ নির্ণয় বা ওষুধ শুরু করবেন না। যোগ্য চিকিৎসকের পরামর্শ নিন।</div></div>
+</div></section>
+
+<section id="tab-tests" class="hidden"><div class="grid">
+<div class="card s8"><h2>🧪 পরীক্ষার আনুমানিক খরচ</h2><p class="muted">পরীক্ষা বাছাই করে নমুনা মূল্য দেখুন। প্রকৃত মূল্য প্রতিষ্ঠান, শহর ও প্যাকেজভেদে বদলাতে পারে।</p><div class="field"><label for="testSearch">পরীক্ষার নাম</label><input id="testSearch" placeholder="যেমন: CBC, রক্তের সুগার"></div><div class="field"><label for="testArea">এলাকা</label><input id="testArea" placeholder="যেমন: রংপুর"></div><button id="searchTests">মূল্য দেখুন</button><div id="testResults" style="margin-top:12px"></div><div class="safety" style="margin-top:12px">এই দামগুলো কেবল UI প্রদর্শনের জন্য কাল্পনিক নমুনা। রোগ নির্ণয় বা চিকিৎসার সিদ্ধান্তের ভিত্তি হিসেবে ব্যবহার করবেন না।</div></div>
+<div class="card s4"><h2>মূল্য কীভাবে নির্ভরযোগ্য হবে?</h2><ul class="muted"><li>ল্যাবের অনুমোদিত মূল্য তালিকা সংগ্রহ</li><li>শেষ যাচাইয়ের তারিখ প্রদর্শন</li><li>ফোনে মূল্য নিশ্চিত করার নির্দেশ</li><li>ভুল মূল্য রিপোর্ট করার ব্যবস্থা</li></ul></div>
+</div></section>
+
+<section id="tab-appointments" class="hidden"><div class="grid">
+<div class="card s6"><h2>📅 অ্যাপয়েন্টমেন্ট অনুরোধ</h2><p class="muted">এটি আপনার ডিভাইসে একটি অনুরোধের খসড়া তৈরি করবে। অনুরোধটি কোনো হাসপাতাল বা চিকিৎসকের কাছে যাবে না।</p><form id="apptForm">
+<div class="field"><label for="patient">রোগীর নাম বা ডাকনাম *</label><input id="patient" required maxlength="70" placeholder="নাম"></div>
+<div class="fields"><div class="field"><label for="apptDoctor">চিকিৎসক / বিভাগ *</label><input id="apptDoctor" required maxlength="100" placeholder="নাম বা বিভাগ"></div><div class="field"><label for="apptPlace">হাসপাতাল / ক্লিনিক *</label><input id="apptPlace" required maxlength="120" placeholder="প্রতিষ্ঠানের নাম"></div></div>
+<div class="fields"><div class="field"><label for="apptDate">পছন্দের তারিখ *</label><input id="apptDate" type="date" required></div><div class="field"><label for="apptTime">পছন্দের সময়</label><select id="apptTime"><option>সকাল</option><option>দুপুর</option><option>বিকাল</option><option>সন্ধ্যা</option></select></div></div>
+<div class="field"><label for="apptPhone">যোগাযোগ নম্বর (ঐচ্ছিক)</label><input id="apptPhone" type="tel" maxlength="20" placeholder="নিজের ডিভাইসে রাখার জন্য"></div>
+<label class="check"><input id="privacy" type="checkbox" required><span>আমি বুঝেছি, তথ্য এই ব্রাউজারে সংরক্ষিত হবে; এটি নিশ্চিত বুকিং নয়। শেয়ার করা ডিভাইসে সংবেদনশীল তথ্য দেব না।</span></label>
+<button type="submit">অনুরোধ সংরক্ষণ করুন</button>
+</form></div>
+<div class="card s6"><h2>আপনার সংরক্ষিত অনুরোধ</h2><div id="apptList"></div><button class="danger" id="deleteAppts">সব অনুরোধ মুছুন</button><p class="muted">নিশ্চিত বুকিংয়ের জন্য হাসপাতাল/চেম্বারের সঙ্গে সরাসরি যোগাযোগ করুন।</p></div>
+</div></section>
+
+<section id="tab-about" class="hidden"><div class="grid">
+<div class="card s8"><h2>💰 আয়ের বাস্তবসম্মত উপায়</h2>
+<div class="item"><h3>১. যাচাইকৃত হাসপাতাল/ক্লিনিক প্রোফাইল</h3><p class="muted">প্রতিষ্ঠানের অনুমতি নিয়ে ঠিকানা, বিভাগ, সময়সূচি ও যোগাযোগের তথ্য হালনাগাদ করার জন্য মাসিক ফি। স্পনসরড লিস্টিং স্পষ্টভাবে চিহ্নিত করতে হবে।</p></div>
+<div class="item"><h3>২. পরীক্ষার মূল্য তালিকা ব্যবস্থাপনা</h3><p class="muted">ডায়াগনস্টিক সেন্টার থেকে অনুমোদিত মূল্য ও সেবার তথ্য যাচাই করে তালিকাভুক্তির সেবা-ফি। রোগীর ফলাফল বিক্রি বা ব্যক্তিগত তথ্য ব্যবহার নয়।</p></div>
+<div class="item"><h3>৩. বুকিং/কল সংযোগ ফি</h3><p class="muted">অনলাইন বুকিং বাস্তবে কাজ করলে অংশীদার প্রতিষ্ঠানের সঙ্গে স্বচ্ছ চুক্তি; রোগীর কাছ থেকে লুকানো ফি নয়।</p></div>
+<div class="item"><h3>৪. বিজ্ঞাপন</h3><p class="muted">পর্যাপ্ত দর্শক হলে নীতিমালা-সম্মত বিজ্ঞাপন বিবেচনা করা যায়। চিকিৎসা-সংক্রান্ত দাবি যাচাই ছাড়া প্রচার করবেন না; আয় নিশ্চিত নয়।</p></div>
+</div>
+<div class="card s4"><h2>🛠️ বিনামূল্যের প্রযুক্তি</h2><p><b>প্রোটোটাইপ:</b> একক HTML ফাইল</p><p><b>হোস্টিং:</b> GitHub Pages / Cloudflare Pages</p><p><b>ডেটাবেস:</b> Firebase বা Supabase-এর ফ্রি টিয়ার</p><p><b>ফর্ম:</b> প্রথমে এই ডেমো, পরে অনলাইন ব্যাকএন্ড</p><p class="muted">ফ্রি টিয়ারের সীমা ও নীতিমালা সময়ের সঙ্গে বদলাতে পারে।</p></div>
+<div class="card s12"><h2>🚀 অনলাইন MVP চালুর ধাপ</h2><ol><li>একটি জেলা দিয়ে শুরু করুন; হাসপাতাল, চিকিৎসক ও ল্যাবের তথ্য সরাসরি প্রতিষ্ঠান থেকে যাচাই করুন।</li><li>HTML ফাইলটি GitHub-এ `index.html` নামে আপলোড করে Settings → Pages থেকে প্রকাশ করুন।</li><li>সব ব্যবহারকারীর বুকিং/তথ্য সিঙ্ক করতে নিরাপদ অনলাইন ডেটাবেস ও সার্ভার-সাইড নিয়ম যোগ করুন।</li><li>হাসপাতাল/চিকিৎসকের অনুমোদন ছাড়া বুকিং নিশ্চিত বলে দেখাবেন না।</li><li>স্বাস্থ্য-তথ্য সংবেদনশীল: প্রয়োজনের অতিরিক্ত তথ্য সংগ্রহ করবেন না, অ্যাক্সেস সীমিত রাখুন, মুছে ফেলার সুবিধা দিন এবং স্থানীয় আইন/নীতিমালা মেনে চলুন।</li></ol><button id="copyLaunch" class="secondary">লঞ্চ পরিকল্পনা কপি করুন</button></div>
+</div></section>
+<footer class="foot">সেবাসাথী একটি স্বাধীন পরীক্ষামূলক ডেমো; এটি হাসপাতাল, চিকিৎসক বা সরকারি স্বাস্থ্যসেবার অফিসিয়াল অ্যাপ নয়। কোনো রোগ নির্ণয় বা জরুরি চিকিৎসার বিকল্প নয়।</footer>
+</main><div id="toast" class="toast hidden" role="status"></div>
+<script>
+const $=id=>document.getElementById(id);
+const hospitals=[
+{name:"নমুনা সরকারি হাসপাতাল",area:"রংপুর",type:"সরকারি হাসপাতাল",services:"জরুরি বিভাগ, মেডিসিন, শিশু",phone:"যাচাই করা হয়নি",address:"ঠিকানা যোগ করার আগে যাচাই করুন"},
+{name:"নমুনা জেনারেল ক্লিনিক",area:"ঢাকা",type:"বেসরকারি হাসপাতাল",services:"বহির্বিভাগ, মেডিসিন",phone:"যাচাই করা হয়নি",address:"ঠিকানা যোগ করার আগে যাচাই করুন"},
+{name:"নমুনা ডায়াগনস্টিক সেন্টার",area:"রংপুর",type:"ডায়াগনস্টিক সেন্টার",services:"রক্ত পরীক্ষা, ইমেজিং",phone:"যাচাই করা হয়নি",address:"ঠিকানা যোগ করার আগে যাচাই করুন"},
+{name:"নমুনা মাতৃ ও শিশু কেন্দ্র",area:"ঢাকা",type:"মাতৃ ও শিশু",services:"মাতৃস্বাস্থ্য, শিশু বিভাগ",phone:"যাচাই করা হয়নি",address:"ঠিকানা যোগ করার আগে যাচাই করুন"}
+];
+const doctors=[
+{name:"ডেমো চিকিৎসক ১",spec:"মেডিসিন",area:"রংপুর",place:"নমুনা সরকারি হাসপাতাল",qual:"যোগ্যতা ও BMDC নম্বর যাচাই করা হয়নি",hours:"সময়সূচি যাচাই করা হয়নি"},
+{name:"ডেমো চিকিৎসক ২",spec:"শিশু",area:"ঢাকা",place:"নমুনা জেনারেল ক্লিনিক",qual:"যোগ্যতা ও BMDC নম্বর যাচাই করা হয়নি",hours:"সময়সূচি যাচাই করা হয়নি"},
+{name:"ডেমো চিকিৎসক ৩",spec:"স্ত্রীরোগ ও প্রসূতি",area:"রংপুর",place:"নমুনা মাতৃ ও শিশু কেন্দ্র",qual:"যোগ্যতা ও BMDC নম্বর যাচাই করা হয়নি",hours:"সময়সূচি যাচাই করা হয়নি"},
+{name:"ডেমো চিকিৎসক ৪",spec:"চর্মরোগ",area:"ঢাকা",place:"নমুনা জেনারেল ক্লিনিক",qual:"যোগ্যতা ও BMDC নম্বর যাচাই করা হয়নি",hours:"সময়সূচি যাচাই করা হয়নি"},
+{name:"ডেমো চিকিৎসক ৫",spec:"হৃদরোগ",area:"ঢাকা",place:"নমুনা হাসপাতাল",qual:"যোগ্যতা ও BMDC নম্বর যাচাই করা হয়নি",hours:"সময়সূচি যাচাই করা হয়নি"}
+];
+const tests=[
+{name:"CBC (Complete Blood Count)",price:"৳৩০০–৬০০ (কাল্পনিক নমুনা)",area:"সব এলাকা"},
+{name:"রক্তের সুগার",price:"৳১০০–২৫০ (কাল্পনিক নমুনা)",area:"সব এলাকা"},
+{name:"Serum Creatinine",price:"৳২৫০–৫০০ (কাল্পনিক নমুনা)",area:"সব এলাকা"},
+{name:"Lipid Profile",price:"৳৭০০–১,২০০ (কাল্পনিক নমুনা)",area:"সব এলাকা"},
+{name:"Urine R/E",price:"৳১৫০–৩০০ (কাল্পনিক নমুনা)",area:"সব এলাকা"},
+{name:"TSH",price:"৳৫০০–১,০০০ (কাল্পনিক নমুনা)",area:"সব এলাকা"}
+];
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function toast(t){$("toast").textContent=t;$("toast").classList.remove("hidden");setTimeout(()=>$("toast").classList.add("hidden"),2800)}
+function getList(k){try{return JSON.parse(localStorage.getItem(k)||"[]")}catch(e){return []}}
+function setList(k,v){localStorage.setItem(k,JSON.stringify(v))}
+function hospitalCard(h){return `<div class="item"><h3>${esc(h.name)} <span class="pill orange">নমুনা</span></h3><p class="muted">${esc(h.area)} · ${esc(h.type)}</p><p>${esc(h.services)}</p><p class="muted">${esc(h.address)} · ফোন: ${esc(h.phone)}</p><button class="secondary" onclick="prefillAppt('${esc(h.name).replace(/'/g,"&#39;")}')">অ্যাপয়েন্টমেন্ট ফর্ম খুলুন</button></div>`}
+function doctorCard(d){return `<div class="item"><h3>${esc(d.name)} <span class="pill orange">ডেমো</span></h3><p>${esc(d.spec)} · ${esc(d.area)}</p><p class="muted">${esc(d.place)}</p><p class="muted">${esc(d.qual)} · ${esc(d.hours)}</p><button class="secondary" onclick="prefillDoctor('${esc(d.name).replace(/'/g,"&#39;")}','${esc(d.place).replace(/'/g,"&#39;")}')">অনুরোধ ফর্মে নিন</button></div>`}
+function renderHospitals(){ $("hospitalAll").innerHTML=hospitals.map(hospitalCard).join("") }
+$("searchHosp").onclick=()=>{let area=$("area").value.trim().toLowerCase(),type=$("service").value;let res=hospitals.filter(h=>(!area||h.area.toLowerCase().includes(area))&&(!type||h.type===type));$("hospitalResults").innerHTML=res.length?res.map(hospitalCard).join(""):'<div class="empty">মিল পাওয়া যায়নি। বাস্তব প্রতিষ্ঠান যোগ করার আগে তথ্য যাচাই করুন।</div>'};
+$("searchDocs").onclick=()=>{let spec=$("spec").value,area=$("docArea").value.trim().toLowerCase();let res=doctors.filter(d=>(!spec||d.spec===spec)&&(!area||d.area.toLowerCase().includes(area)));$("doctorResults").innerHTML=res.length?res.map(doctorCard).join(""):'<div class="empty">মিল পাওয়া যায়নি।</div>'};
+$("searchTests").onclick=()=>{let q=$("testSearch").value.trim().toLowerCase();let res=tests.filter(t=>!q||t.name.toLowerCase().includes(q));$("testResults").innerHTML=res.length?res.map(t=>`<div class="item"><h3>${esc(t.name)}</h3><p class="pill orange">${esc(t.price)}</p><p class="muted">এলাকা: ${esc($("testArea").value||"উল্লেখ করা হয়নি")} · মূল্য যাচাই করা নয়</p></div>`).join(""):'<div class="empty">মিল পাওয়া যায়নি।</div>'};
+window.prefillAppt=function(name){$("apptPlace").value=name;document.querySelector('[data-tab="appointments"]').click()};
+window.prefillDoctor=function(name,place){$("apptDoctor").value=name;$("apptPlace").value=place;document.querySelector('[data-tab="appointments"]').click()};
+function renderAppts(){let a=getList("sebasathi_appointments");$("apptList").innerHTML=a.length?a.slice().reverse().map(x=>`<div class="item"><h3>${esc(x.doctor)} — ${esc(x.place)}</h3><p>রোগী: ${esc(x.patient)} · তারিখ: ${esc(x.date)} (${esc(x.time)})</p><p class="muted">অবস্থা: সংরক্ষিত খসড়া; নিশ্চিত বুকিং নয়</p></div>`).join(""):'<div class="empty">এখনও কোনো অনুরোধ সংরক্ষিত নেই।</div>'}
+$("apptForm").addEventListener("submit",e=>{e.preventDefault();let a=getList("sebasathi_appointments");a.push({patient:$("patient").value.trim(),doctor:$("apptDoctor").value.trim(),place:$("apptPlace").value.trim(),date:$("apptDate").value,time:$("apptTime").value,phone:$("apptPhone").value.trim()});try{setList("sebasathi_appointments",a);e.target.reset();renderAppts();toast("অনুরোধের খসড়া এই ডিভাইসে সংরক্ষিত হয়েছে।")}catch(err){toast("সংরক্ষণ সম্ভব হয়নি। ব্রাউজারের স্টোরেজ পরীক্ষা করুন।")}});
+$("deleteAppts").onclick=()=>{if(confirm("এই ব্রাউজারে থাকা সব অ্যাপয়েন্টমেন্ট খসড়া মুছবেন?")){localStorage.removeItem("sebasathi_appointments");renderAppts();toast("খসড়া মুছে ফেলা হয়েছে।")}};
+document.querySelectorAll("[data-tab]").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll("[data-tab]").forEach(x=>{x.classList.toggle("active",x===b);x.classList.toggle("secondary",x!==b)});["hospitals","doctors","tests","appointments","about"].forEach(t=>$("tab-"+t).classList.toggle("hidden",t!==b.dataset.tab));if(b.dataset.tab==="appointments")renderAppts();window.scrollTo({top:0,behavior:"smooth"})}));
+$("copyLaunch").onclick=()=>{let t="সেবাসাথী MVP: ১) একটি জেলা বেছে হাসপাতাল/ডাক্তার/ল্যাবের তথ্য যাচাই ২) HTML ফাইল GitHub Pages-এ প্রকাশ ৩) Firebase/Supabase নিরাপদ ব্যাকএন্ড যোগ ৪) প্রতিষ্ঠানের সম্মতি নিয়ে বুকিং সংযোগ ৫) ব্যক্তিগত স্বাস্থ্যতথ্য কম সংগ্রহ ও নিরাপদে সংরক্ষণ। আয়: যাচাইকৃত প্রোফাইল, মূল্য তালিকা ব্যবস্থাপনা, স্বচ্ছ পার্টনার ফি, বিজ্ঞাপন।";if(navigator.clipboard?.writeText)navigator.clipboard.writeText(t).then(()=>toast("লঞ্চ পরিকল্পনা কপি হয়েছে।")).catch(()=>toast(t));else toast(t)};
+renderHospitals();renderAppts();
+</script>
+</body></html>
